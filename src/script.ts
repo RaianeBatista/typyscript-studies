@@ -1,9 +1,8 @@
 // Type em Arrays
-let nomes: string[] = ['raiane', 'poliana', 'cleuby'];
+let nomes: any = ['raiane', 'paulo', 'levi', 'lucas']
 
-let idades: number[] = [10, 20, 30, 40, 50];//o mais recomendado
+nomes.push(556)
 
-let numeros: Array<number> = [15, 23, 45, 67];
 
-//numeros.push('raiane');
-numeros.push(2);
+let coisas:any = ['raiane', 15, 'luke']
+coisas.push(true)
