@@ -4,12 +4,15 @@ let numero2 = document.getElementById('numero2') as HTMLInputElement;
 let botao = document.getElementById('calcular');
 let res = document.getElementById('resultado');
 
-function calcular(n1, n2) {
-    return +n1 + +n2;
-  }
+function calcular(n1: number, n2: number) {
+  return n1 + n2;
+}
 
-botao.addEventListener('click', function () {
+botao?.addEventListener('click', function () {
   if (res) {
-    res.innerHTML = calcular(numero1.value, numero2.value);
+    res.innerHTML = calcular(+numero1.value, +numero2.value).toString();
   }
 });
+
+//tsc script.ts
+// tsc src/script.ts --outDir public
