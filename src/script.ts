@@ -1,19 +1,8 @@
-// tsc --version
-let numero1 = document.getElementById('numero1') as HTMLInputElement;
-let numero2 = document.getElementById('numero2') as HTMLInputElement;
-let botao = document.getElementById('calcular');
-let res = document.getElementById('resultado');
+// Os types primitivos
+let nome: string = 'Raiane';
 
-function calcular(n1: number, n2: number) {
-  return n1 + n2;
-}
+let sobrenome: String = 'Batista'; //não recomendado
 
-botao?.addEventListener('click', function () {
-  if (res) {
-    res.innerHTML = calcular(+numero1.value, +numero2.value).toString();
-  }
-});
+let idade = 36;
 
-//tsc script.ts
-// tsc src/script.ts --outDir public
-// tsc script.ts --noEmitOnError
+let programador: boolean = true;
