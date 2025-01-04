@@ -1,7 +1,6 @@
 //Usando types no retorno de uma função
-function firstLetterUppercase(name: string): string {
-  let firstLetter = name.charAt(0).toUpperCase();
- return firstLetter + name.substring(1);
+function somar(n1, n2):number {
+  return n1 + n2;
 }
 
-let nome = firstLetterUppercase('raiane');
+let alguma = somar('raiane', 'batista')
