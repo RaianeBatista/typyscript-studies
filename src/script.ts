@@ -1,8 +1,8 @@
-// Type em Arrays
-let nomes: any = ['raiane', 'paulo', 'levi', 'lucas']
+function firstLetterUppercase(name: string, lastname: string): string {
+  let firstLetterName = name.charAt(0).toUpperCase();
+  let lastLettername = lastname.charAt(0).toUpperCase();
+  return firstLetterName + name.substring(1) + ' ' + lastLettername + lastname.substring(1);
+}
 
-nomes.push(556)
-
-
-let coisas:any = ['raiane', 15, 'luke']
-coisas.push(true)
+firstLetterUppercase('raiane', 'batista');
+//Raiane
