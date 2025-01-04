@@ -16,3 +16,4 @@ botao?.addEventListener('click', function () {
 
 //tsc script.ts
 // tsc src/script.ts --outDir public
+// tsc script.ts --noEmitOnError
