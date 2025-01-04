@@ -1,7 +1,11 @@
-//Usando types no retorno de uma função
-//Deve-se typar o retorno e a entrada no paramentro da função
-function somar(n1: number, n2: number): number {
-  return n1 + n2;
-}
+//Contextual Typing em funções anônimas
+//Mosntrar os nomes em maiusculo
+let names = ['raiane', 'luiz', 'henry'];
 
-let alguma = somar(12, 17);
+names.forEach(function (nome) {
+  if (typeof nome === 'string') {
+    console.log(nome.toUpperCase());
+  } else {
+    console.log(nome);
+  }
+});
