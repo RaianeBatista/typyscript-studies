@@ -1,8 +1,9 @@
-// Os types primitivos
-let nome: string = 'Raiane';
+// Type em Arrays
+let nomes: string[] = ['raiane', 'poliana', 'cleuby'];
 
-let sobrenome: String = 'Batista'; //não recomendado
+let idades: number[] = [10, 20, 30, 40, 50];//o mais recomendado
 
-let idade = 36;
+let numeros: Array<number> = [15, 23, 45, 67];
 
-let programador: boolean = true;
+//numeros.push('raiane');
+numeros.push(2);
