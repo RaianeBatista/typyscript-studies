@@ -1,12 +1,7 @@
-function firstLetterUppercase(name: string, lastname: string): string {
+//Usando types no retorno de uma função
+function firstLetterUppercase(name: string) {
   let firstLetter = name.charAt(0).toUpperCase();
-  let lastLetter = lastname.charAt(0).toUpperCase();
-  return (
-    firstLetter + name.substring(1) + ' ' + lastLetter + lastname.substring(1)
-  );
+  return firstLetter + name.substring(1);
 }
 
-//firstLetterUppercase('raiane', 'batista');
-firstLetterUppercase('15',49);
-
-//Raiane
+let nome: number = firstLetterUppercase('raiane');
