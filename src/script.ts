@@ -4,4 +4,4 @@ function firstLetterUppercase(name: string): string {
  return firstLetter + name.substring(1);
 }
 
-let nome: string = firstLetterUppercase('raiane');
+let nome = firstLetterUppercase('raiane');
