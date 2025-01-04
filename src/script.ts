@@ -1,11 +1,11 @@
-//Contextual Typing em funções anônimas
-//Mosntrar os nomes em maiusculo
-let names = ['raiane', 'luiz', 'henry'];
+//Types em objetos
+function resumo(usuario : {nome: string, idade: number}) {
+  return `Olá ${usuario.nome}, tudo bem? Você tem ${usuario.idade} anos`;
+}
 
-names.forEach(function (nome) {
-  if (typeof nome === 'string') {
-    console.log(nome.toUpperCase());
-  } else {
-    console.log(nome);
-  }
-});
+//Implementação da função
+let u = {
+  nome: 'Raiane',
+ // idade: 22,
+};
+console.log(resumo(u));
