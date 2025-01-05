@@ -1,19 +1,27 @@
-//Type para funções
-type MathFunction = (n1: number, n2: number) => number;
+// Retorno void => quando a dunção nao tem retorno
+type QualquerFuncao = () => void;
 
-const somar: MathFunction = (n1, n2) => {
-  return n1 + n2;
+const algo: QualquerFuncao = () => {
+  return 'bla bla';
 };
 
-//somar()
-const subtrair: MathFunction = (n1, n2) => {
-  return n1 - n2;
+let retorno = algo();
+
+const blabla = (): void => {
+ // return 12;
 };
 
-const multiplicar: MathFunction = (n1, n2) => {
-  return n1 * n2;
-};
+function removerElemento(el: HTMLElement): void {
+  //processo de remoção do elemento
+  //  el.remove();
+  if (el.classList) {
+    return;
+  }
+  el.remove();
+}
 
-const dividir: MathFunction = (n1, n2) => {
-  return n1 / n2;
-};
+//removerElemento(document.getElementById('teste'));
+const elemento = document.getElementById('teste');
+if (elemento) {
+  removerElemento(elemento);
+}
