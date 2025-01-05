@@ -1,14 +1,15 @@
-//Types em objetos
-function resumo(usuario: { nome: string; idade?: number }) {
-  if (usuario.idade !== undefined) {
-    return `Olá ${usuario.nome}, tudo bem? Você tem ${usuario.idade} anos`;
+//Union Types (múltiplos types)
+// let idade: string | number = 90;
+
+// idade = document.getElementById('idade')?.innerHTML;
+
+function mostrarIdade(idade: string | number) {
+  if (typeof idade=== 'string') {
+    console.log('mInha idade é: ' + idade);
   } else {
-    return `Olá ${usuario.nome}, tudo bem?`;
+    console.log(idade)
   }
 }
 
-//Implementação da função
-let u = {
-  nome: 'Raiane',
-};
-resumo(u);
+mostrarIdade(90);
+mostrarIdade('90');
