@@ -1,15 +1,8 @@
-//Union Types (múltiplos types)
-// let idade: string | number = 90;
+//Type e Interface: Como usar e diferenças
 
-// idade = document.getElementById('idade')?.innerHTML;
+type NomeCompleto = string;
 
-function mostrarIdade(idade: string | number) {
-  if (typeof idade=== 'string') {
-    console.log('mInha idade é: ' + idade);
-  } else {
-    console.log(idade)
-  }
-}
+//let nome: string = 'Raiane';
+let nome: NomeCompleto = 'Raiane';
 
-mostrarIdade(90);
-mostrarIdade('90');
+
