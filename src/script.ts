@@ -1,11 +1,15 @@
 //Type e Interface: Como usar e diferenças
-
-type Idade = string | number
-
-let idade: Idade = 23
-
-function mostrarIdade(i: Idade) {
-return i
+type User = {
+  nome: string,
+  idade: number
 }
 
 
+function resumo(usuario: { nome: string;  idade:number}) {
+  return `Olá ${usuario.nome}, você tem ${usuario.idade} anos`;
+}
+
+resumo({
+  nome: 'Raiane',
+  idade: 19,
+});
