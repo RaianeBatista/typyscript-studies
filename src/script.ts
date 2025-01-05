@@ -1,6 +1,8 @@
-//type Assertions
-let idadeField = document.getElementById('idade') as HTMLInputElement;
+//type literal
 
-//...
+//let nome: string = 'raiane';
+let nome: 'raiane' = 'raiane';
 
-console.log(idadeField.value)
+nome = 'raiane';
+
+nome = 'luke';
