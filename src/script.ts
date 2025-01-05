@@ -1,8 +1,7 @@
-//type literal
+function mostrarTexto(texto: string, alinhamento: string) {
+    
+}
 
-//let nome: string = 'raiane';
-let nome: 'raiane' = 'raiane';
-
-nome = 'raiane';
-
-nome = 'luke';
+mostrarTexto('Raiane', 'left')
+mostrarTexto('Raiane', 'right')
+mostrarTexto('Raiane', 'blabla')
