@@ -1,10 +1,27 @@
-type Opcoes = {
-  width: number;
-  height: number;
+//Inferência literal
+function fazerRequisicao(url: string, method: 'GET' | 'POST') {
+  //...
+}
+
+// type Methods = 'GET' | 'POST'
+
+// let url = 'https://google.com.br';
+// let method: Methods = 'GET';
+
+//method = 'bla bla'
+// fazerRequisicao(url, method);
+
+
+type RequetsDetails = {
+    url: string,
+    method: 'GET' | 'POST'
+}
+
+let req: RequetsDetails = {
+  url: 'https://google.com.br',
+  method: 'GET',
 };
 
-function configurar(props: Opcoes | 'auto') {}
+req.method = 'POST'
 
-configurar({ width: 100, height: 200 });
-configurar('auto');
-configurar('automatico');
+fazerRequisicao(req.url, req.method);
