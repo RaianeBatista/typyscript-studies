@@ -1,18 +1,6 @@
-type User = {
-nome: string
-}
+//type Assertions
+let idadeField = document.getElementById('idade') as HTMLInputElement;
 
-type User = {
-  idade: number
-}
+//...
 
-
-
-function resumo(usuario: User) {
-  return `Olá ${usuario.nome}, você tem ${usuario.idade} anos`;
-}
-
-resumo({
-  nome: 'Raiane',
-  idade: 19,
-});
+console.log(idadeField.value)
