@@ -1,8 +1,11 @@
 //Type e Interface: Como usar e diferenças
 
-type NomeCompleto = string;
+type Idade = string | number
 
-//let nome: string = 'Raiane';
-let nome: NomeCompleto = 'Raiane';
+let idade: Idade = 23
+
+function mostrarIdade(i: Idade) {
+return i
+}
 
 
