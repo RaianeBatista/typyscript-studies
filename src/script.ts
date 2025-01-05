@@ -1,11 +1,8 @@
-//Type e Interface: Como usar e diferenças
-// type User = {
-//   nome: string,
-//   idade: number
-// }
-
 interface User {
   nome: string;
+}
+
+interface User {
   idade: number;
 }
 
