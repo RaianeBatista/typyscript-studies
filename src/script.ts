@@ -1,28 +1,19 @@
-//Inferência literal
-function fazerRequisicao(url: string, method: 'GET' | 'POST') {
-  //...
-}
+//Type para funções
+type MathFunction = (n1: number, n2: number) => number;
 
-// type Methods = 'GET' | 'POST'
-
-// let url = 'https://google.com.br';
-// let method: Methods = 'GET';
-
-//method = 'bla bla'
-// fazerRequisicao(url, method);
-
-
-type RequetsDetails = {
-  url: string;
-  //method: string;
-  method: 'GET' | 'POST';
+const somar: MathFunction = (n1, n2) => {
+  return n1 + n2;
 };
 
-let req: RequetsDetails = {
-  url: 'https://google.com.br',
-  method: 'GET',
+//somar()
+const subtrair: MathFunction = (n1, n2) => {
+  return n1 - n2;
 };
 
-req.method = 'POST'
+const multiplicar: MathFunction = (n1, n2) => {
+  return n1 * n2;
+};
 
-fazerRequisicao(req.url, req.method);
+const dividir: MathFunction = (n1, n2) => {
+  return n1 / n2;
+};
