@@ -13,9 +13,10 @@ function fazerRequisicao(url: string, method: 'GET' | 'POST') {
 
 
 type RequetsDetails = {
-    url: string,
-    method: 'GET' | 'POST'
-}
+  url: string;
+  //method: string;
+  method: 'GET' | 'POST';
+};
 
 let req: RequetsDetails = {
   url: 'https://google.com.br',
