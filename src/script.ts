@@ -8,7 +8,7 @@ const algo: QualquerFuncao = () => {
 let retorno = algo();
 
 const blabla = (): void => {
- // return 12;
+  // return 12;
 };
 
 function removerElemento(el: HTMLElement): void {
